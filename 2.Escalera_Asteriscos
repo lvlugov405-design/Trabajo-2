@@ -1,0 +1,14 @@
+Funcion resultado <- escalera ( n ) 
+	Para a=1 Hasta n Con Paso 1 Hacer             //repite la funcion n veces
+		Para b=1 Hasta a Con Paso 1 Hacer        //Escribe el asterisco sin espacios hasta que b es igual a a 
+			Imprimir "*"," " Sin Saltar
+		Fin Para
+		Imprimir " "                              //Salto de linea
+	Fin Para
+Fin Funcion
+
+Algoritmo Escalera_Asteriscos
+	Imprimir "Ingrese el numero de escaleras: "
+	leer n;
+	Imprimir escalera(n);
+FinAlgoritmo

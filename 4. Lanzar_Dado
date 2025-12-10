@@ -1,0 +1,18 @@
+Funcion resultado <- lanzamiento ( 50 )
+	a=0                                         //Variable que guarda las veces que el dado cae en 1
+	Para i=0 Hasta 50 Con Paso 1 Hacer       //bucle que repite los 50 lanzamientos del dado
+		b=Aleatorio(1,6)                        //Numero aleatorio del dado
+		Imprimir "tiro: ", i , ": ", b         
+		
+		Si b==1 Entonces                      //Si el dado cae en 1 
+			a=a+1                              //sumar de a 1 cada vez que se cumpla
+		Fin Si
+
+	Fin Para
+	Imprimir "el numero de veces que el dado cayo en 1 es de: ", a
+Fin Funcion
+
+
+Algoritmo Lanzar_Dado
+	Imprimir lanzamiento(50)
+FinAlgoritmo

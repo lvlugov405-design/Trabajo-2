@@ -1,0 +1,19 @@
+Funcion resultado <- suma_par ( n )
+	num=n                                    //Variable diferente para generar los pares
+	Para i=1 Hasta n Con Paso 1 Hacer     //Repetir el proceso n veces
+		Si num MOD 2==0 Entonces          //Si el numero es Par
+			num=num+2                     //paso al siguiente numero par
+			imprimir num
+		SiNo                               //Si el numero es impar
+			num=num+1                    //se suma 1 para volverlo par
+			imprimir num
+		Fin Si
+	Fin Para	
+Fin Funcion
+
+Algoritmo Suma_Numeros_Pares
+	Imprimir "Ingrese un numero: "
+	Leer n
+	Imprimir suma_par(n)
+	
+FinAlgoritmo

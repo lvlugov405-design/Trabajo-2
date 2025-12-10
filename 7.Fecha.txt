@@ -1,0 +1,77 @@
+Funcion resultado = año ( aa )
+	repetir 
+		leer aa
+		Si aa>=0 Entonces
+			resultado = aa
+		SiNo
+			escribir "el año es incorrecto"
+		Fin Si
+	Hasta Que aa>=0 
+	resultado = aa
+Fin Funcion
+
+Funcion mes_año = Mes( mm )
+	
+	mes_año=mm
+	Repetir
+		leer mm
+		Segun mm Hacer
+			1:
+				mes_año="Enero"
+			2:
+				mes_año="Febrero"
+			3:
+				mes_año="Marzo"
+			4:	
+				mes_año="Abril"
+			5:
+				mes_año="Mayo"
+			6:
+				mes_año="Junio"
+			7:
+				mes_año="Julio"
+			8:
+				mes_año="Agosto"
+			9:
+				mes_año="Septiembre"
+			10:
+				mes_año="Octubre"
+			11:
+				mes_año="Noviembre"
+			12:
+				mes_año="Diciembre"
+		De Otro Modo:
+			mes_año="Incorrecto"
+			Escribir mes_año
+		Fin Segun
+	
+Hasta Que mm>=1 y mm<=12
+ m = mes_año
+Fin Funcion
+
+Funcion dia = dia_mes (dd)
+leer dd
+dia=dd	
+Repetir
+		si dd<=31 y dd>0 Entonces
+		dia=dd	
+		SiNo
+			Escribir "El dia es incorrecto"
+			leer dd
+		FinSi
+		
+	
+	Hasta Que dd<=31 y dd>0
+	dia=dd
+Fin Funcion
+
+Algoritmo DD_MM_AA
+	Escribir "dia"
+	Imprimir dia_mes(dd);
+	Escribir "mes"
+	Imprimir Mes(mm);
+	Escribir "año"
+	Imprimir año(aa);
+	
+	
+FinAlgoritmo

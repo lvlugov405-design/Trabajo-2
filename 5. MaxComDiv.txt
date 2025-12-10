@@ -1,0 +1,39 @@
+Funcion resultado = MCD ( n1,n2 )              // funcion que halla El MCD según la formula de Ecuclides
+	Mientras (n1>=0 y n2>=0) Hacer              // While que condiciona el momento en el que se detiene la funcion 
+		Repetir                               //Este ciclo repite el proceso hasta que se halla el MCD ("residuo"=0)
+			Si n1>n2 Entonces                // Condicional para controlar que funcione sin importar el orden de los datos (mayor o menor)
+				residuo= n1 mod n2           // guarda el valor del residuo de la division en la variable "residuo"
+				Si residuo <>0 Entonces      // condicional que verifica si se hallo el MCD, si no devuelve nuevamente el proceso.
+					n1=n2                    // si NO se halla el MCD se redefinen las variables según la formula y se repite el proceso
+					n2=residuo
+				Fin Si
+				resultado = n2
+			SiNo
+				Si n2>n1 Entonces            // Condicional para controlar que funcione sin importar el orden de los datos (mayor o menor)
+					residuo= n2 mod n1
+					Si residuo <>0 Entonces
+						n2=n1
+						n1=residuo
+					Fin Si
+					resultado = n1
+				Fin Si                        
+			Fin Si
+		Hasta Que residuo==0                 //Este ciclo repite el proceso hasta que se halla el MCD ("residuo"=0)
+		leer n1
+		n2 = resultado
+	Fin Mientras                             // While que condiciona el momento en el que se detiene la funcion
+	Escribir "El MCD de su conjunto de numeros es  : "
+Fin Funcion
+
+Algoritmo Max_comun_Div
+	
+	Escribir " Bienvenido a la funcion para hallar el MCD "
+	Escribir " Ingrese los numeros "
+
+	leer n1;
+	leer n2;
+	
+	Imprimir MCD(n1,n2);
+	
+	
+FinAlgoritmo

@@ -1,0 +1,33 @@
+Funcion resultado = adivina ( mensaje ) 
+	a=Aleatorio(1,50)                                       //numero aleatorio entre un intervalo
+	i=0                                                    //controlar el numero de veces que se repite el ciclo 
+	Repetir
+		Escribir " Ingrese un numero entre 1 y 50 "
+		leer b                                             // Intento 1
+		si b>=0 y b<=50 entonces                           // Si el numero esta en el intervalo
+			Si b<a Entonces                             // Si el numero ingresado es menor al numero aleatorio
+				imprimir ("El numero es mayor");
+			SiNo
+				Si b>a Entonces                         // Si el numero ingresado es mayor al numero aleatorio
+					imprimir ("El numero es menor");
+				SiNo                                     // Si el numero ingresado es igual al numero aleatorio
+				imprimir ("ADIVINASTE");
+				resultado=1                             // Retorno de la funcion para frenar el ciclo "repetir"
+			Fin Si
+		Fin Si
+		i=i+1                                          // contador para aumentar 1 a 1 
+	SiNo
+		imprimir ("El numero no se encuentra entre 1 y 50"); 
+	fin si
+Hasta Que i==5 o resultado==1                        //contador 5 intentos
+si resultado <>1 entonces                            // Si no advino el numero
+	Imprimir ("No adivinaste el numero :c ")
+FinSi
+Fin Funcion
+
+
+Algoritmo Adivinar_Numero
+	
+	Imprimir adivina("")
+	
+FinAlgoritmo
